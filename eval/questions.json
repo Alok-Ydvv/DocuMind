@@ -1,0 +1,702 @@
+[
+  {
+    "question": "What is the warranty period for the Aurora Speaker?",
+    "answer": "36 months",
+    "field": "warranty",
+    "sku": "SKU-1001",
+    "page": 1
+  },
+  {
+    "question": "How much does the Zephyr Heater weigh?",
+    "answer": "3470 g",
+    "field": "weight",
+    "sku": "SKU-1002",
+    "page": 1
+  },
+  {
+    "question": "What is the price of the Glacier Charger?",
+    "answer": "$154",
+    "field": "price",
+    "sku": "SKU-1003",
+    "page": 1
+  },
+  {
+    "question": "What colour is the Glacier Blender available in?",
+    "answer": "Ivory",
+    "field": "colour",
+    "sku": "SKU-1004",
+    "page": 1
+  },
+  {
+    "question": "What is the warranty period for the Ember Fan?",
+    "answer": "18 months",
+    "field": "warranty",
+    "sku": "SKU-1005",
+    "page": 1
+  },
+  {
+    "question": "How much does the Aurora Dehumidifier weigh?",
+    "answer": "2160 g",
+    "field": "weight",
+    "sku": "SKU-1006",
+    "page": 1
+  },
+  {
+    "question": "What is the price of the Aurora Blender?",
+    "answer": "$271",
+    "field": "price",
+    "sku": "SKU-1007",
+    "page": 1
+  },
+  {
+    "question": "What colour is the Nimbus Charger available in?",
+    "answer": "Teal",
+    "field": "colour",
+    "sku": "SKU-1008",
+    "page": 2
+  },
+  {
+    "question": "What is the warranty period for the Lumen Kettle?",
+    "answer": "12 months",
+    "field": "warranty",
+    "sku": "SKU-1009",
+    "page": 2
+  },
+  {
+    "question": "How much does the Zephyr Mixer weigh?",
+    "answer": "440 g",
+    "field": "weight",
+    "sku": "SKU-1010",
+    "page": 2
+  },
+  {
+    "question": "What is the price of the Zephyr Vacuum?",
+    "answer": "$289",
+    "field": "price",
+    "sku": "SKU-1011",
+    "page": 2
+  },
+  {
+    "question": "What colour is the Nimbus Dehumidifier available in?",
+    "answer": "Graphite",
+    "field": "colour",
+    "sku": "SKU-1012",
+    "page": 2
+  },
+  {
+    "question": "What is the warranty period for the Ember Vacuum?",
+    "answer": "6 months",
+    "field": "warranty",
+    "sku": "SKU-1013",
+    "page": 2
+  },
+  {
+    "question": "How much does the Ember Dehumidifier weigh?",
+    "answer": "690 g",
+    "field": "weight",
+    "sku": "SKU-1014",
+    "page": 2
+  },
+  {
+    "question": "What is the price of the Meridian Fan?",
+    "answer": "$20",
+    "field": "price",
+    "sku": "SKU-1015",
+    "page": 2
+  },
+  {
+    "question": "What colour is the Orbit Charger available in?",
+    "answer": "Navy",
+    "field": "colour",
+    "sku": "SKU-1016",
+    "page": 3
+  },
+  {
+    "question": "What is the warranty period for the Ember Blender?",
+    "answer": "6 months",
+    "field": "warranty",
+    "sku": "SKU-1017",
+    "page": 3
+  },
+  {
+    "question": "How much does the Juniper Vacuum weigh?",
+    "answer": "3230 g",
+    "field": "weight",
+    "sku": "SKU-1018",
+    "page": 3
+  },
+  {
+    "question": "What is the price of the Harbor Dehumidifier?",
+    "answer": "$101",
+    "field": "price",
+    "sku": "SKU-1019",
+    "page": 3
+  },
+  {
+    "question": "What colour is the Juniper Router available in?",
+    "answer": "Olive",
+    "field": "colour",
+    "sku": "SKU-1020",
+    "page": 3
+  },
+  {
+    "question": "What is the warranty period for the Glacier Fan?",
+    "answer": "24 months",
+    "field": "warranty",
+    "sku": "SKU-1021",
+    "page": 3
+  },
+  {
+    "question": "How much does the Ember Router weigh?",
+    "answer": "1340 g",
+    "field": "weight",
+    "sku": "SKU-1022",
+    "page": 3
+  },
+  {
+    "question": "What is the price of the Orbit Dehumidifier?",
+    "answer": "$62",
+    "field": "price",
+    "sku": "SKU-1023",
+    "page": 4
+  },
+  {
+    "question": "What colour is the Orbit Vacuum available in?",
+    "answer": "Navy",
+    "field": "colour",
+    "sku": "SKU-1024",
+    "page": 4
+  },
+  {
+    "question": "What is the warranty period for the Harbor Lamp?",
+    "answer": "12 months",
+    "field": "warranty",
+    "sku": "SKU-1025",
+    "page": 4
+  },
+  {
+    "question": "How much does the Orbit Heater weigh?",
+    "answer": "960 g",
+    "field": "weight",
+    "sku": "SKU-1026",
+    "page": 4
+  },
+  {
+    "question": "What is the price of the Keystone Vacuum?",
+    "answer": "$127",
+    "field": "price",
+    "sku": "SKU-1027",
+    "page": 4
+  },
+  {
+    "question": "What colour is the Lumen Lamp available in?",
+    "answer": "Olive",
+    "field": "colour",
+    "sku": "SKU-1028",
+    "page": 4
+  },
+  {
+    "question": "What is the warranty period for the Zephyr Kettle?",
+    "answer": "18 months",
+    "field": "warranty",
+    "sku": "SKU-1029",
+    "page": 4
+  },
+  {
+    "question": "How much does the Keystone Toaster weigh?",
+    "answer": "1380 g",
+    "field": "weight",
+    "sku": "SKU-1030",
+    "page": 5
+  },
+  {
+    "question": "What is the price of the Lumen Fan?",
+    "answer": "$320",
+    "field": "price",
+    "sku": "SKU-1031",
+    "page": 5
+  },
+  {
+    "question": "What colour is the Nimbus Mixer available in?",
+    "answer": "Olive",
+    "field": "colour",
+    "sku": "SKU-1032",
+    "page": 5
+  },
+  {
+    "question": "What is the warranty period for the Meridian Speaker?",
+    "answer": "6 months",
+    "field": "warranty",
+    "sku": "SKU-1033",
+    "page": 5
+  },
+  {
+    "question": "How much does the Ember Heater weigh?",
+    "answer": "460 g",
+    "field": "weight",
+    "sku": "SKU-1034",
+    "page": 5
+  },
+  {
+    "question": "What is the price of the Cobalt Vacuum?",
+    "answer": "$140",
+    "field": "price",
+    "sku": "SKU-1035",
+    "page": 5
+  },
+  {
+    "question": "What colour is the Lumen Charger available in?",
+    "answer": "Graphite",
+    "field": "colour",
+    "sku": "SKU-1036",
+    "page": 5
+  },
+  {
+    "question": "What is the warranty period for the Nimbus Vacuum?",
+    "answer": "36 months",
+    "field": "warranty",
+    "sku": "SKU-1037",
+    "page": 5
+  },
+  {
+    "question": "How much does the Aurora Lamp weigh?",
+    "answer": "4250 g",
+    "field": "weight",
+    "sku": "SKU-1038",
+    "page": 6
+  },
+  {
+    "question": "What is the price of the Lumen Heater?",
+    "answer": "$356",
+    "field": "price",
+    "sku": "SKU-1039",
+    "page": 6
+  },
+  {
+    "question": "What colour is the Lumen Toaster available in?",
+    "answer": "Crimson",
+    "field": "colour",
+    "sku": "SKU-1040",
+    "page": 6
+  },
+  {
+    "question": "What is the warranty period for the Nimbus Toaster?",
+    "answer": "6 months",
+    "field": "warranty",
+    "sku": "SKU-1041",
+    "page": 6
+  },
+  {
+    "question": "How much does the Zephyr Dehumidifier weigh?",
+    "answer": "430 g",
+    "field": "weight",
+    "sku": "SKU-1042",
+    "page": 6
+  },
+  {
+    "question": "What is the price of the Ember Kettle?",
+    "answer": "$74",
+    "field": "price",
+    "sku": "SKU-1043",
+    "page": 6
+  },
+  {
+    "question": "What colour is the Nimbus Kettle available in?",
+    "answer": "Ivory",
+    "field": "colour",
+    "sku": "SKU-1044",
+    "page": 6
+  },
+  {
+    "question": "What is the warranty period for the Cobalt Fan?",
+    "answer": "12 months",
+    "field": "warranty",
+    "sku": "SKU-1045",
+    "page": 7
+  },
+  {
+    "question": "How much does the Cobalt Mixer weigh?",
+    "answer": "1390 g",
+    "field": "weight",
+    "sku": "SKU-1046",
+    "page": 7
+  },
+  {
+    "question": "What is the price of the Harbor Router?",
+    "answer": "$44",
+    "field": "price",
+    "sku": "SKU-1047",
+    "page": 7
+  },
+  {
+    "question": "What colour is the Aurora Fan available in?",
+    "answer": "Navy",
+    "field": "colour",
+    "sku": "SKU-1048",
+    "page": 7
+  },
+  {
+    "question": "What is the warranty period for the Zephyr Router?",
+    "answer": "12 months",
+    "field": "warranty",
+    "sku": "SKU-1049",
+    "page": 7
+  },
+  {
+    "question": "How much does the Juniper Fan weigh?",
+    "answer": "1210 g",
+    "field": "weight",
+    "sku": "SKU-1050",
+    "page": 7
+  },
+  {
+    "question": "What is the price of the Ember Charger?",
+    "answer": "$20",
+    "field": "price",
+    "sku": "SKU-1051",
+    "page": 7
+  },
+  {
+    "question": "What colour is the Glacier Mixer available in?",
+    "answer": "Crimson",
+    "field": "colour",
+    "sku": "SKU-1052",
+    "page": 8
+  },
+  {
+    "question": "What is the warranty period for the Nimbus Lamp?",
+    "answer": "24 months",
+    "field": "warranty",
+    "sku": "SKU-1053",
+    "page": 8
+  },
+  {
+    "question": "How much does the Keystone Router weigh?",
+    "answer": "910 g",
+    "field": "weight",
+    "sku": "SKU-1054",
+    "page": 8
+  },
+  {
+    "question": "What is the price of the Zephyr Charger?",
+    "answer": "$315",
+    "field": "price",
+    "sku": "SKU-1055",
+    "page": 8
+  },
+  {
+    "question": "What colour is the Orbit Fan available in?",
+    "answer": "Navy",
+    "field": "colour",
+    "sku": "SKU-1056",
+    "page": 8
+  },
+  {
+    "question": "What is the warranty period for the Cobalt Toaster?",
+    "answer": "6 months",
+    "field": "warranty",
+    "sku": "SKU-1057",
+    "page": 8
+  },
+  {
+    "question": "How much does the Harbor Mixer weigh?",
+    "answer": "920 g",
+    "field": "weight",
+    "sku": "SKU-1058",
+    "page": 8
+  },
+  {
+    "question": "What is the price of the Harbor Vacuum?",
+    "answer": "$114",
+    "field": "price",
+    "sku": "SKU-1059",
+    "page": 8
+  },
+  {
+    "question": "What colour is the Cobalt Charger available in?",
+    "answer": "Teal",
+    "field": "colour",
+    "sku": "SKU-1060",
+    "page": 9
+  },
+  {
+    "question": "What is the warranty period for the Harbor Toaster?",
+    "answer": "24 months",
+    "field": "warranty",
+    "sku": "SKU-1061",
+    "page": 9
+  },
+  {
+    "question": "How much does the Aurora Kettle weigh?",
+    "answer": "3160 g",
+    "field": "weight",
+    "sku": "SKU-1062",
+    "page": 9
+  },
+  {
+    "question": "What is the price of the Orbit Blender?",
+    "answer": "$355",
+    "field": "price",
+    "sku": "SKU-1063",
+    "page": 9
+  },
+  {
+    "question": "What colour is the Juniper Dehumidifier available in?",
+    "answer": "Olive",
+    "field": "colour",
+    "sku": "SKU-1064",
+    "page": 9
+  },
+  {
+    "question": "What is the warranty period for the Aurora Router?",
+    "answer": "12 months",
+    "field": "warranty",
+    "sku": "SKU-1065",
+    "page": 9
+  },
+  {
+    "question": "How much does the Juniper Lamp weigh?",
+    "answer": "1470 g",
+    "field": "weight",
+    "sku": "SKU-1066",
+    "page": 9
+  },
+  {
+    "question": "What is the price of the Lumen Mixer?",
+    "answer": "$180",
+    "field": "price",
+    "sku": "SKU-1067",
+    "page": 10
+  },
+  {
+    "question": "What colour is the Juniper Toaster available in?",
+    "answer": "Teal",
+    "field": "colour",
+    "sku": "SKU-1068",
+    "page": 10
+  },
+  {
+    "question": "What is the warranty period for the Keystone Speaker?",
+    "answer": "6 months",
+    "field": "warranty",
+    "sku": "SKU-1069",
+    "page": 10
+  },
+  {
+    "question": "How much does the Juniper Heater weigh?",
+    "answer": "1470 g",
+    "field": "weight",
+    "sku": "SKU-1070",
+    "page": 10
+  },
+  {
+    "question": "What is the price of the Orbit Lamp?",
+    "answer": "$144",
+    "field": "price",
+    "sku": "SKU-1071",
+    "page": 10
+  },
+  {
+    "question": "What colour is the Juniper Charger available in?",
+    "answer": "Graphite",
+    "field": "colour",
+    "sku": "SKU-1072",
+    "page": 10
+  },
+  {
+    "question": "What is the warranty period for the Juniper Kettle?",
+    "answer": "18 months",
+    "field": "warranty",
+    "sku": "SKU-1073",
+    "page": 10
+  },
+  {
+    "question": "How much does the Lumen Speaker weigh?",
+    "answer": "3530 g",
+    "field": "weight",
+    "sku": "SKU-1074",
+    "page": 11
+  },
+  {
+    "question": "What is the price of the Cobalt Dehumidifier?",
+    "answer": "$87",
+    "field": "price",
+    "sku": "SKU-1075",
+    "page": 11
+  },
+  {
+    "question": "What colour is the Keystone Lamp available in?",
+    "answer": "Graphite",
+    "field": "colour",
+    "sku": "SKU-1076",
+    "page": 11
+  },
+  {
+    "question": "What is the warranty period for the Orbit Router?",
+    "answer": "36 months",
+    "field": "warranty",
+    "sku": "SKU-1077",
+    "page": 11
+  },
+  {
+    "question": "How much does the Aurora Charger weigh?",
+    "answer": "1190 g",
+    "field": "weight",
+    "sku": "SKU-1078",
+    "page": 11
+  },
+  {
+    "question": "What is the price of the Zephyr Fan?",
+    "answer": "$343",
+    "field": "price",
+    "sku": "SKU-1079",
+    "page": 11
+  },
+  {
+    "question": "What colour is the Nimbus Fan available in?",
+    "answer": "Graphite",
+    "field": "colour",
+    "sku": "SKU-1080",
+    "page": 11
+  },
+  {
+    "question": "What is the warranty period for the Aurora Vacuum?",
+    "answer": "6 months",
+    "field": "warranty",
+    "sku": "SKU-1081",
+    "page": 11
+  },
+  {
+    "question": "How much does the Keystone Fan weigh?",
+    "answer": "130 g",
+    "field": "weight",
+    "sku": "SKU-1082",
+    "page": 12
+  },
+  {
+    "question": "What is the price of the Harbor Speaker?",
+    "answer": "$398",
+    "field": "price",
+    "sku": "SKU-1083",
+    "page": 12
+  },
+  {
+    "question": "What colour is the Harbor Charger available in?",
+    "answer": "Crimson",
+    "field": "colour",
+    "sku": "SKU-1084",
+    "page": 12
+  },
+  {
+    "question": "What is the warranty period for the Nimbus Router?",
+    "answer": "6 months",
+    "field": "warranty",
+    "sku": "SKU-1085",
+    "page": 12
+  },
+  {
+    "question": "How much does the Cobalt Speaker weigh?",
+    "answer": "2910 g",
+    "field": "weight",
+    "sku": "SKU-1086",
+    "page": 12
+  },
+  {
+    "question": "What is the price of the Keystone Blender?",
+    "answer": "$94",
+    "field": "price",
+    "sku": "SKU-1087",
+    "page": 12
+  },
+  {
+    "question": "What colour is the Meridian Router available in?",
+    "answer": "Crimson",
+    "field": "colour",
+    "sku": "SKU-1088",
+    "page": 12
+  },
+  {
+    "question": "What is the warranty period for the Nimbus Blender?",
+    "answer": "6 months",
+    "field": "warranty",
+    "sku": "SKU-1089",
+    "page": 13
+  },
+  {
+    "question": "How much does the Keystone Mixer weigh?",
+    "answer": "3530 g",
+    "field": "weight",
+    "sku": "SKU-1090",
+    "page": 13
+  },
+  {
+    "question": "What is the price of the Juniper Speaker?",
+    "answer": "$227",
+    "field": "price",
+    "sku": "SKU-1091",
+    "page": 13
+  },
+  {
+    "question": "What colour is the Ember Toaster available in?",
+    "answer": "Olive",
+    "field": "colour",
+    "sku": "SKU-1092",
+    "page": 13
+  },
+  {
+    "question": "What is the warranty period for the Ember Speaker?",
+    "answer": "24 months",
+    "field": "warranty",
+    "sku": "SKU-1093",
+    "page": 13
+  },
+  {
+    "question": "How much does the Zephyr Lamp weigh?",
+    "answer": "4120 g",
+    "field": "weight",
+    "sku": "SKU-1094",
+    "page": 13
+  },
+  {
+    "question": "What is the price of the Meridian Dehumidifier?",
+    "answer": "$100",
+    "field": "price",
+    "sku": "SKU-1095",
+    "page": 13
+  },
+  {
+    "question": "What colour is the Zephyr Blender available in?",
+    "answer": "Navy",
+    "field": "colour",
+    "sku": "SKU-1096",
+    "page": 14
+  },
+  {
+    "question": "What is the warranty period for the Meridian Blender?",
+    "answer": "12 months",
+    "field": "warranty",
+    "sku": "SKU-1097",
+    "page": 14
+  },
+  {
+    "question": "How much does the Aurora Toaster weigh?",
+    "answer": "4320 g",
+    "field": "weight",
+    "sku": "SKU-1098",
+    "page": 14
+  },
+  {
+    "question": "What is the price of the Meridian Charger?",
+    "answer": "$117",
+    "field": "price",
+    "sku": "SKU-1099",
+    "page": 14
+  },
+  {
+    "question": "What colour is the Zephyr Speaker available in?",
+    "answer": "Crimson",
+    "field": "colour",
+    "sku": "SKU-1100",
+    "page": 14
+  }
+]

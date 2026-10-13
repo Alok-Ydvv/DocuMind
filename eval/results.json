@@ -1,0 +1,920 @@
+{
+  "summary": {
+    "questions": 100,
+    "chunks_indexed": 27,
+    "top_k": 4,
+    "embed_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "retrieval_hit_at_4": 0.65,
+    "top1_contains_sku": 0.35,
+    "citation_page_correct": 0.36,
+    "search_latency_ms_median": 31.5,
+    "by_field": {
+      "colour": 0.68,
+      "price": 0.64,
+      "warranty": 0.52,
+      "weight": 0.76
+    }
+  },
+  "rows": [
+    {
+      "id": 1,
+      "field": "warranty",
+      "question": "What is the warranty period for the Aurora Speaker?",
+      "expected": "36 months",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 2,
+      "field": "weight",
+      "question": "How much does the Zephyr Heater weigh?",
+      "expected": "3470 g",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 3,
+      "field": "price",
+      "question": "What is the price of the Glacier Charger?",
+      "expected": "$154",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 4,
+      "field": "colour",
+      "question": "What colour is the Glacier Blender available in?",
+      "expected": "Ivory",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 5,
+      "field": "warranty",
+      "question": "What is the warranty period for the Ember Fan?",
+      "expected": "18 months",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 6,
+      "field": "weight",
+      "question": "How much does the Aurora Dehumidifier weigh?",
+      "expected": "2160 g",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 7,
+      "field": "price",
+      "question": "What is the price of the Aurora Blender?",
+      "expected": "$271",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 8,
+      "field": "colour",
+      "question": "What colour is the Nimbus Charger available in?",
+      "expected": "Teal",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 9,
+      "field": "warranty",
+      "question": "What is the warranty period for the Lumen Kettle?",
+      "expected": "12 months",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 10,
+      "field": "weight",
+      "question": "How much does the Zephyr Mixer weigh?",
+      "expected": "440 g",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 11,
+      "field": "price",
+      "question": "What is the price of the Zephyr Vacuum?",
+      "expected": "$289",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 12,
+      "field": "colour",
+      "question": "What colour is the Nimbus Dehumidifier available in?",
+      "expected": "Graphite",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 13,
+      "field": "warranty",
+      "question": "What is the warranty period for the Ember Vacuum?",
+      "expected": "6 months",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 14,
+      "field": "weight",
+      "question": "How much does the Ember Dehumidifier weigh?",
+      "expected": "690 g",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 15,
+      "field": "price",
+      "question": "What is the price of the Meridian Fan?",
+      "expected": "$20",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 16,
+      "field": "colour",
+      "question": "What colour is the Orbit Charger available in?",
+      "expected": "Navy",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 17,
+      "field": "warranty",
+      "question": "What is the warranty period for the Ember Blender?",
+      "expected": "6 months",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 18,
+      "field": "weight",
+      "question": "How much does the Juniper Vacuum weigh?",
+      "expected": "3230 g",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 19,
+      "field": "price",
+      "question": "What is the price of the Harbor Dehumidifier?",
+      "expected": "$101",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 20,
+      "field": "colour",
+      "question": "What colour is the Juniper Router available in?",
+      "expected": "Olive",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 21,
+      "field": "warranty",
+      "question": "What is the warranty period for the Glacier Fan?",
+      "expected": "24 months",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 22,
+      "field": "weight",
+      "question": "How much does the Ember Router weigh?",
+      "expected": "1340 g",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 23,
+      "field": "price",
+      "question": "What is the price of the Orbit Dehumidifier?",
+      "expected": "$62",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 24,
+      "field": "colour",
+      "question": "What colour is the Orbit Vacuum available in?",
+      "expected": "Navy",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 25,
+      "field": "warranty",
+      "question": "What is the warranty period for the Harbor Lamp?",
+      "expected": "12 months",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": true
+    },
+    {
+      "id": 26,
+      "field": "weight",
+      "question": "How much does the Orbit Heater weigh?",
+      "expected": "960 g",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 27,
+      "field": "price",
+      "question": "What is the price of the Keystone Vacuum?",
+      "expected": "$127",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 28,
+      "field": "colour",
+      "question": "What colour is the Lumen Lamp available in?",
+      "expected": "Olive",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 29,
+      "field": "warranty",
+      "question": "What is the warranty period for the Zephyr Kettle?",
+      "expected": "18 months",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 30,
+      "field": "weight",
+      "question": "How much does the Keystone Toaster weigh?",
+      "expected": "1380 g",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 31,
+      "field": "price",
+      "question": "What is the price of the Lumen Fan?",
+      "expected": "$320",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 32,
+      "field": "colour",
+      "question": "What colour is the Nimbus Mixer available in?",
+      "expected": "Olive",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 33,
+      "field": "warranty",
+      "question": "What is the warranty period for the Meridian Speaker?",
+      "expected": "6 months",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 34,
+      "field": "weight",
+      "question": "How much does the Ember Heater weigh?",
+      "expected": "460 g",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 35,
+      "field": "price",
+      "question": "What is the price of the Cobalt Vacuum?",
+      "expected": "$140",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 36,
+      "field": "colour",
+      "question": "What colour is the Lumen Charger available in?",
+      "expected": "Graphite",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 37,
+      "field": "warranty",
+      "question": "What is the warranty period for the Nimbus Vacuum?",
+      "expected": "36 months",
+      "retrieval_hit": false,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 38,
+      "field": "weight",
+      "question": "How much does the Aurora Lamp weigh?",
+      "expected": "4250 g",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 39,
+      "field": "price",
+      "question": "What is the price of the Lumen Heater?",
+      "expected": "$356",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 40,
+      "field": "colour",
+      "question": "What colour is the Lumen Toaster available in?",
+      "expected": "Crimson",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 41,
+      "field": "warranty",
+      "question": "What is the warranty period for the Nimbus Toaster?",
+      "expected": "6 months",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 42,
+      "field": "weight",
+      "question": "How much does the Zephyr Dehumidifier weigh?",
+      "expected": "430 g",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 43,
+      "field": "price",
+      "question": "What is the price of the Ember Kettle?",
+      "expected": "$74",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 44,
+      "field": "colour",
+      "question": "What colour is the Nimbus Kettle available in?",
+      "expected": "Ivory",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 45,
+      "field": "warranty",
+      "question": "What is the warranty period for the Cobalt Fan?",
+      "expected": "12 months",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 46,
+      "field": "weight",
+      "question": "How much does the Cobalt Mixer weigh?",
+      "expected": "1390 g",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 47,
+      "field": "price",
+      "question": "What is the price of the Harbor Router?",
+      "expected": "$44",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 48,
+      "field": "colour",
+      "question": "What colour is the Aurora Fan available in?",
+      "expected": "Navy",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 49,
+      "field": "warranty",
+      "question": "What is the warranty period for the Zephyr Router?",
+      "expected": "12 months",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 50,
+      "field": "weight",
+      "question": "How much does the Juniper Fan weigh?",
+      "expected": "1210 g",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 51,
+      "field": "price",
+      "question": "What is the price of the Ember Charger?",
+      "expected": "$20",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 52,
+      "field": "colour",
+      "question": "What colour is the Glacier Mixer available in?",
+      "expected": "Crimson",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 53,
+      "field": "warranty",
+      "question": "What is the warranty period for the Nimbus Lamp?",
+      "expected": "24 months",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 54,
+      "field": "weight",
+      "question": "How much does the Keystone Router weigh?",
+      "expected": "910 g",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 55,
+      "field": "price",
+      "question": "What is the price of the Zephyr Charger?",
+      "expected": "$315",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 56,
+      "field": "colour",
+      "question": "What colour is the Orbit Fan available in?",
+      "expected": "Navy",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 57,
+      "field": "warranty",
+      "question": "What is the warranty period for the Cobalt Toaster?",
+      "expected": "6 months",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 58,
+      "field": "weight",
+      "question": "How much does the Harbor Mixer weigh?",
+      "expected": "920 g",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 59,
+      "field": "price",
+      "question": "What is the price of the Harbor Vacuum?",
+      "expected": "$114",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 60,
+      "field": "colour",
+      "question": "What colour is the Cobalt Charger available in?",
+      "expected": "Teal",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 61,
+      "field": "warranty",
+      "question": "What is the warranty period for the Harbor Toaster?",
+      "expected": "24 months",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 62,
+      "field": "weight",
+      "question": "How much does the Aurora Kettle weigh?",
+      "expected": "3160 g",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 63,
+      "field": "price",
+      "question": "What is the price of the Orbit Blender?",
+      "expected": "$355",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 64,
+      "field": "colour",
+      "question": "What colour is the Juniper Dehumidifier available in?",
+      "expected": "Olive",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 65,
+      "field": "warranty",
+      "question": "What is the warranty period for the Aurora Router?",
+      "expected": "12 months",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 66,
+      "field": "weight",
+      "question": "How much does the Juniper Lamp weigh?",
+      "expected": "1470 g",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 67,
+      "field": "price",
+      "question": "What is the price of the Lumen Mixer?",
+      "expected": "$180",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 68,
+      "field": "colour",
+      "question": "What colour is the Juniper Toaster available in?",
+      "expected": "Teal",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 69,
+      "field": "warranty",
+      "question": "What is the warranty period for the Keystone Speaker?",
+      "expected": "6 months",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 70,
+      "field": "weight",
+      "question": "How much does the Juniper Heater weigh?",
+      "expected": "1470 g",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 71,
+      "field": "price",
+      "question": "What is the price of the Orbit Lamp?",
+      "expected": "$144",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 72,
+      "field": "colour",
+      "question": "What colour is the Juniper Charger available in?",
+      "expected": "Graphite",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 73,
+      "field": "warranty",
+      "question": "What is the warranty period for the Juniper Kettle?",
+      "expected": "18 months",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 74,
+      "field": "weight",
+      "question": "How much does the Lumen Speaker weigh?",
+      "expected": "3530 g",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 75,
+      "field": "price",
+      "question": "What is the price of the Cobalt Dehumidifier?",
+      "expected": "$87",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 76,
+      "field": "colour",
+      "question": "What colour is the Keystone Lamp available in?",
+      "expected": "Graphite",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 77,
+      "field": "warranty",
+      "question": "What is the warranty period for the Orbit Router?",
+      "expected": "36 months",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 78,
+      "field": "weight",
+      "question": "How much does the Aurora Charger weigh?",
+      "expected": "1190 g",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 79,
+      "field": "price",
+      "question": "What is the price of the Zephyr Fan?",
+      "expected": "$343",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 80,
+      "field": "colour",
+      "question": "What colour is the Nimbus Fan available in?",
+      "expected": "Graphite",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 81,
+      "field": "warranty",
+      "question": "What is the warranty period for the Aurora Vacuum?",
+      "expected": "6 months",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 82,
+      "field": "weight",
+      "question": "How much does the Keystone Fan weigh?",
+      "expected": "130 g",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 83,
+      "field": "price",
+      "question": "What is the price of the Harbor Speaker?",
+      "expected": "$398",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 84,
+      "field": "colour",
+      "question": "What colour is the Harbor Charger available in?",
+      "expected": "Crimson",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 85,
+      "field": "warranty",
+      "question": "What is the warranty period for the Nimbus Router?",
+      "expected": "6 months",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 86,
+      "field": "weight",
+      "question": "How much does the Cobalt Speaker weigh?",
+      "expected": "2910 g",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 87,
+      "field": "price",
+      "question": "What is the price of the Keystone Blender?",
+      "expected": "$94",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 88,
+      "field": "colour",
+      "question": "What colour is the Meridian Router available in?",
+      "expected": "Crimson",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 89,
+      "field": "warranty",
+      "question": "What is the warranty period for the Nimbus Blender?",
+      "expected": "6 months",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 90,
+      "field": "weight",
+      "question": "How much does the Keystone Mixer weigh?",
+      "expected": "3530 g",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 91,
+      "field": "price",
+      "question": "What is the price of the Juniper Speaker?",
+      "expected": "$227",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 92,
+      "field": "colour",
+      "question": "What colour is the Ember Toaster available in?",
+      "expected": "Olive",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 93,
+      "field": "warranty",
+      "question": "What is the warranty period for the Ember Speaker?",
+      "expected": "24 months",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 94,
+      "field": "weight",
+      "question": "How much does the Zephyr Lamp weigh?",
+      "expected": "4120 g",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 95,
+      "field": "price",
+      "question": "What is the price of the Meridian Dehumidifier?",
+      "expected": "$100",
+      "retrieval_hit": true,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 96,
+      "field": "colour",
+      "question": "What colour is the Zephyr Blender available in?",
+      "expected": "Navy",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    },
+    {
+      "id": 97,
+      "field": "warranty",
+      "question": "What is the warranty period for the Meridian Blender?",
+      "expected": "12 months",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 98,
+      "field": "weight",
+      "question": "How much does the Aurora Toaster weigh?",
+      "expected": "4320 g",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 99,
+      "field": "price",
+      "question": "What is the price of the Meridian Charger?",
+      "expected": "$117",
+      "retrieval_hit": false,
+      "top1_contains_sku": false,
+      "citation_page_correct": false
+    },
+    {
+      "id": 100,
+      "field": "colour",
+      "question": "What colour is the Zephyr Speaker available in?",
+      "expected": "Crimson",
+      "retrieval_hit": true,
+      "top1_contains_sku": true,
+      "citation_page_correct": true
+    }
+  ]
+}
