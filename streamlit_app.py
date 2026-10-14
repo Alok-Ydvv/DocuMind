@@ -17,6 +17,7 @@ SUGGESTIONS = [
 MODE_BADGES = {
     "llm": ("✨ Answered by Claude", "badge-ai"),
     "extractive": ("📌 Best matching passage", "badge-plain"),
+    "summary_free": ("🧮 Basic summary (no AI, rough)", "badge-warn"),
     "needs_llm": ("🔒 Needs an API key", "badge-warn"),
     "none": ("🔍 Not found in documents", "badge-muted"),
 }
@@ -113,7 +114,7 @@ def render_mode_badge(mode: str) -> None:
 
 def render_answer(mode: str, answer: str) -> None:
     # Passages are raw document text: keep their line breaks and don't let "$" start LaTeX.
-    if mode == "extractive":
+    if mode in ("extractive", "summary_free"):
         st.markdown(f'<div class="passage">{html.escape(answer)}</div>', unsafe_allow_html=True)
     else:
         st.markdown(answer.replace("$", r"\$"))
