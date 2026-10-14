@@ -138,23 +138,27 @@ def _answer_with_llm(llm, system_prompt: str, question: str, hits) -> str:
     return str(response.content).strip()
 
 
-def answer_question(question: str, store: VectorStore, llm=None) -> dict:
-    if is_document_task(question):
-        chunks = store.all_chunks()
-        if not chunks:
-            return {"answer": NOT_FOUND, "mode": "none", "sources": []}
-        if llm is None and is_free_summary_request(question):
-            text, positions = extractive_summary(chunks, SUMMARY_SENTENCES)
-            sources = [_format_source(i, chunks[p], None) for i, p in enumerate(positions, start=1)]
-            return {"answer": text, "mode": "summary_free", "sources": sources}
-        hits = [(doc, None) for doc in _spread_sample(chunks, config.TASK_CONTEXT_CHUNKS)]
-        sources = [_format_source(i, doc, None) for i, (doc, _) in enumerate(hits, start=1)]
-        if llm is None:
-            return {"answer": NEEDS_LLM, "mode": "needs_llm", "sources": sources}
-        answer = _answer_with_llm(llm, TASK_SYSTEM_PROMPT, question, hits)
-        return {"answer": answer, "mode": "llm", "sources": sources}
+def _answer_document_task(question: str, store: VectorStore, llm) -> dict:
+    chunks = store.all_chunks()
+    if not chunks:
+        return {"answer": NOT_FOUND, "mode": "none", "sources": []}
+    if llm is None and is_free_summary_request(question):
+        text, positions = extractive_summary(chunks, SUMMARY_SENTENCES)
+        sources = [_format_source(i, chunks[p], None) for i, p in enumerate(positions, start=1)]
+        return {"answer": text, "mode": "summary_free", "sources": sources}
+    hits = [(doc, None) for doc in _spread_sample(chunks, config.TASK_CONTEXT_CHUNKS)]
+    sources = [_format_source(i, doc, None) for i, (doc, _) in enumerate(hits, start=1)]
+    if llm is None:
+        return {"answer": NEEDS_LLM, "mode": "needs_llm", "sources": sources}
+    answer = _answer_with_llm(llm, TASK_SYSTEM_PROMPT, question, hits)
+    return {"answer": answer, "mode": "llm", "sources": sources}
 
+
+def answer_question(question: str, store: VectorStore, llm=None) -> dict:
+    # Retrieval first: an ordinary question that contains "overview" or "exam" still finds its passage.
     hits = [(doc, score) for doc, score in store.search(question, config.TOP_K) if score >= config.MIN_SCORE]
+    if not hits and is_document_task(question):
+        return _answer_document_task(question, store, llm)
     if not hits:
         return {"answer": NOT_FOUND, "mode": "none", "sources": []}
 
