@@ -25,15 +25,32 @@ class VectorStore:
                 allow_dangerous_deserialization=True,  # index is written by this app, not user-supplied
             )
 
-    def add(self, chunks: list[Document]) -> None:
+    def add(self, chunks: list[Document]) -> list[str]:
+        """Index chunks and return their ids, so a document can be removed later."""
         if not chunks:
-            return
+            return []
         with self._lock:
             if self._db is None:
                 self._db = FAISS.from_documents(chunks, self._embeddings)
+                ids = list(self._db.index_to_docstore_id.values())
             else:
-                self._db.add_documents(chunks)
+                ids = self._db.add_documents(chunks)
             self._db.save_local(str(self._index_dir))
+        return ids
+
+    def delete(self, ids: list[str]) -> None:
+        if self._db is None or not ids:
+            return
+        with self._lock:
+            self._db.delete(ids)
+            self._db.save_local(str(self._index_dir))
+
+    def delete_by_doc_id(self, doc_id: str) -> None:
+        """Fallback for documents indexed before chunk ids were recorded."""
+        if self._db is None:
+            return
+        ids = [cid for cid, doc in self._db.docstore._dict.items() if doc.metadata.get("doc_id") == doc_id]
+        self.delete(ids)
 
     def all_chunks(self) -> list[Document]:
         """Every indexed chunk in upload order. Used for whole-document tasks such as summaries."""
@@ -43,7 +60,7 @@ class VectorStore:
 
     def search(self, query: str, k: int) -> list[tuple[Document, float]]:
         """Return (chunk, cosine similarity in [-1, 1]), most similar first."""
-        if self._db is None:
+        if self._db is None or self._db.index.ntotal == 0:
             return []
         # FAISS returns squared L2 distance d. For unit vectors d = 2 - 2*cos, so cos = 1 - d/2.
         return [

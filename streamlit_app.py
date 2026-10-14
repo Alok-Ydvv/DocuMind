@@ -150,7 +150,10 @@ with st.sidebar:
         with st.spinner("Reading and indexing..."):
             try:
                 entries = [service.index_file(f.name, f.getvalue()) for f in uploads]
-                st.toast(f"Indexed {len(entries)} file(s)", icon="✅")
+                new = [e for e in entries if not e.get("duplicate")]
+                skipped = len(entries) - len(new)
+                note = f" ({skipped} already indexed)" if skipped else ""
+                st.toast(f"Indexed {len(new)} file(s){note}", icon="✅")
                 st.rerun()
             except UploadError as exc:
                 st.error(str(exc))
@@ -159,13 +162,22 @@ with st.sidebar:
     if not docs:
         st.caption("Nothing indexed yet.")
     for doc in docs:
-        st.markdown(
+        name_col, remove_col = st.columns([5, 1])
+        name_col.markdown(
             f'<div class="doc-card"><div class="doc-name">📄 {html.escape(doc["filename"])}</div>'
             f'<div class="source-meta">{doc["chunks"]} chunks</div></div>',
             unsafe_allow_html=True,
         )
+        if remove_col.button("✕", key=f"remove-{doc['id']}", help=f"Remove {doc['filename']}"):
+            service.remove_document(doc["id"])
+            st.toast(f"Removed {doc['filename']}", icon="🗑️")
+            st.rerun()
 
     st.divider()
+    if docs and st.button("🗑️ Remove all documents", use_container_width=True):
+        service.remove_all()
+        st.session_state.messages = []
+        st.rerun()
     if st.button("🧹 Clear chat", use_container_width=True):
         st.session_state.messages = []
         st.rerun()
