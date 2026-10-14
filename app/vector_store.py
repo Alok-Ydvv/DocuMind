@@ -35,6 +35,12 @@ class VectorStore:
                 self._db.add_documents(chunks)
             self._db.save_local(str(self._index_dir))
 
+    def all_chunks(self) -> list[Document]:
+        """Every indexed chunk in upload order. Used for whole-document tasks such as summaries."""
+        if self._db is None:
+            return []
+        return list(self._db.docstore._dict.values())
+
     def search(self, query: str, k: int) -> list[tuple[Document, float]]:
         """Return (chunk, cosine similarity in [-1, 1]), most similar first."""
         if self._db is None:

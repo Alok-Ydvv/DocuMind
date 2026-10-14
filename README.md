@@ -24,17 +24,30 @@ set ANTHROPIC_API_KEY=your-key   # Windows (macOS/Linux: export ANTHROPIC_API_KE
 
 ## Run
 
-Start the API, then the UI in a second terminal:
+The Streamlit app runs everything in one process:
+
+```bash
+streamlit run streamlit_app.py
+```
+
+Open the URL, upload PDFs or DOCX files in the sidebar, click **Index documents**, then ask questions.
+
+The FastAPI routes are optional, for use from other programs:
 
 ```bash
 uvicorn app.main:app --port 8000
 ```
 
-```bash
-streamlit run ui/streamlit_app.py
-```
+## Deploy (Streamlit Community Cloud)
 
-Open the Streamlit URL, upload PDFs or DOCX files in the sidebar, click **Index documents**, then ask questions.
+1. Push this repo to GitHub (it can stay private).
+2. At [share.streamlit.io](https://share.streamlit.io), choose **Create app**, select the repo, branch `main`, and main file `streamlit_app.py`.
+3. Under **Advanced settings**, pick Python 3.10 or later. Optionally add the secret `ANTHROPIC_API_KEY = "..."` to enable generated answers and summaries.
+4. Deploy. The first start downloads the embedding model, so expect a minute or two.
+
+Notes for the hosted copy:
+- Uploaded files and the index live on the app's disk. They are cleared when the app restarts or redeploys, so re-index after a restart.
+- Without `ANTHROPIC_API_KEY`, fact questions still work, but summaries and question papers show the "needs a language model" message.
 
 API endpoints:
 

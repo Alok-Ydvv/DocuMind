@@ -11,6 +11,8 @@ EMBED_MODEL = os.getenv("DOCUMIND_EMBED_MODEL", "sentence-transformers/all-MiniL
 CHUNK_SIZE = int(os.getenv("DOCUMIND_CHUNK_SIZE", "500"))
 CHUNK_OVERLAP = int(os.getenv("DOCUMIND_CHUNK_OVERLAP", "50"))
 TOP_K = int(os.getenv("DOCUMIND_TOP_K", "4"))
+# Whole-document tasks (summaries, question papers) get this many chunks spread across the documents.
+TASK_CONTEXT_CHUNKS = int(os.getenv("DOCUMIND_TASK_CONTEXT_CHUNKS", "15"))
 # Cosine similarity below this is treated as "not in the documents".
 # 0.3 sits between off-topic queries (max 0.25) and catalog questions (min 0.35) in eval/calibration.
 MIN_SCORE = float(os.getenv("DOCUMIND_MIN_SCORE", "0.3"))
