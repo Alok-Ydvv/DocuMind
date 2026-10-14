@@ -9,7 +9,8 @@ from app.vector_store import VectorStore
 NOT_FOUND = "I could not find the answer in the uploaded documents."
 NEEDS_LLM = (
     "This request (a summary, question paper or quiz) needs a language model. "
-    "Set ANTHROPIC_API_KEY and restart the API. The passages it would work from are listed below."
+    "Add an ANTHROPIC_API_KEY (environment variable or app secret) and restart the app. "
+    "The passages it would work from are listed below."
 )
 SNIPPET_CHARS = 300
 
